@@ -73,10 +73,10 @@ cat /var/lib/jenkins/secrets/InitialPassword
 
 ![](./img/j10.png)
 
-    * Goto `Configure Global Security`, check `Enable proxy compatibility`, and save
+* Goto `Configure Global Security`, check `Enable proxy compatibility`, and save
 
-    * Goto `Manage Plugins`, and install these plugins; `Nexus Artifact Uploader`, `Sonarqube Scanner`, `Build Timestamp`, `Pipeline maven integration` and `pipeline utility steps`
+* Goto `Manage Plugins`, and install these plugins; `Nexus Artifact Uploader`, `Sonarqube Scanner`, `Build Timestamp`, `Pipeline maven integration` and `pipeline utility steps`
 
-    ![](./img/j11.png)
+![](./img/j11.png)
 
-    * Goto `Global Tool Configuration`
+* Goto `Global Tool Configuration`
