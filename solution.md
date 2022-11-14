@@ -103,4 +103,58 @@ cat /var/lib/jenkins/secrets/InitialPassword
 
 ## Code Analysis
 
+1. Integrate Sonarqube with Jenkins
 
+* Under, `Global Tool Configuration`, Add `SonarQube Scanner`
+
+![](./img/j17.png)
+
+* On sonarqube dashboard, goto `My Account`, then `Security` to generate a token
+
+![](./img/j18.png)
+
+* In Jenkins,under `Configure System`, Add Sonar Servers and your generated token
+
+![](./img/j19.png)
+
+2. Build our script
+
+![](./img/j20.png)
+
+![](./img/j21.png)
+
+## Quality Gate - Threshold for bugs
+
+* Create a quality gate and set conditions needed to fail a build
+
+![](./img/j22.png)
+
+* Link the project to the quality gate. Goto the project setting, click on quality gate and choose the created quality gate
+
+![](./img/j23.png)
+
+* Use webhooks to send information back to jenkins
+
+![](./img/j24.png)
+
+* Build the script
+
+![](./img/j25.png)
+
+![](./img/j26.png)
+
+## Upload Artifact To Nexus
+
+1. Create Repository using maven(hosted) to store artifact
+
+![](./img/j27.png)
+
+2. Integrate Jenkins with Nexus by setting credentials
+
+![](./img/j28.png)
+
+3. Build the script. Access the nexus repository to validate its storage
+
+![](./img/j29.png)
+
+## Slack Notification
