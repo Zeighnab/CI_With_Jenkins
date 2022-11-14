@@ -64,3 +64,19 @@ cat /var/lib/jenkins/secrets/InitialPassword
 ![](./img/j9.png)
 
 * Sign in using `admin` as username and password
+
+## Plugins for CI on Jenkins
+
+1. Install additional plugins needed for integration
+
+2. On Jenkins Dashboard, go to `Manage Jenkins`
+
+![](./img/j10.png)
+
+    * Goto `Configure Global Security`, check `Enable proxy compatibility`, and save
+
+    * Goto `Manage Plugins`, and install these plugins; `Nexus Artifact Uploader`, `Sonarqube Scanner`, `Build Timestamp`, `Pipeline maven integration` and `pipeline utility steps`
+
+    ![](./img/j11.png)
+
+    * Goto `Global Tool Configuration`
