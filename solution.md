@@ -69,14 +69,38 @@ cat /var/lib/jenkins/secrets/InitialPassword
 
 1. Install additional plugins needed for integration
 
-2. On Jenkins Dashboard, go to `Manage Jenkins`
+2. On Jenkins Dashboard, click on `Manage Jenkins`
 
 ![](./img/j10.png)
 
-* Goto `Configure Global Security`, check `Enable proxy compatibility`, and save
+3. Do the following:
 
-* Goto `Manage Plugins`, and install these plugins; `Nexus Artifact Uploader`, `Sonarqube Scanner`, `Build Timestamp`, `Pipeline maven integration` and `pipeline utility steps`
+* Check `Enable proxy compatibility`, under `Configure Global Security`, and save
+
+* Install these plugins; `Nexus Artifact Uploader`, `Sonarqube Scanner`, `Build Timestamp`, `Pipeline maven integration` and `pipeline utility steps`, under `Manage Plugins`
 
 ![](./img/j11.png)
 
-* Goto `Global Tool Configuration`
+* Add `OracleJDK8` and `Maven3`, under `Global Tool Configuration`
+
+![](./img/j12.png)
+
+![](./img/J13.png)
+
+## Build and Test
+
+1. Click on `Create Job` on the Dashboard, enter the build name and  choose `Pipeline`
+
+![](./img/j14.png)
+
+2. On the Configuration page, under pipeline, paste your pipeline script, and save
+
+![](./img/j15.png)
+
+3. Click on `Build Now`
+
+![](./img/j16.png)
+
+## Code Analysis
+
+
