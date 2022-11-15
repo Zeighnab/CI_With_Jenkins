@@ -158,3 +158,5 @@ cat /var/lib/jenkins/secrets/InitialPassword
 ![](./img/j29.png)
 
 ## Slack Notification
+
+![](./img/j30.png)
